@@ -1,0 +1,7 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:versuch_2_rgb Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Versuch_3_IIC Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:versuch_1_hello_world,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:versuch_2_blinkende_LEDs Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:versuch_2_timer,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:versuch_3_SPI Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:versuch_3_interfaces Debug
+eclipse.preferences.version=1
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:versuch_2_rgb\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:versuch_2_rgb\ Debug/activeLaunchTarget=null\:---
