@@ -28,3 +28,24 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-11-22 17:09:37.278
 !MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-11-22 17:11:00.412
+!MESSAGE Indexed 'versuch_2_blinkende_LEDs' (21 sources, 55 headers) in 9.36 sec: 7,741 declarations; 41,790 references; 28 unresolved inclusions; 946 syntax errors; 7,050 unresolved names (12%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-11-22 17:11:09.286
+!MESSAGE Indexed 'versuch_2_timer' (26 sources, 118 headers) in 8.77 sec: 12,603 declarations; 70,710 references; 2 unresolved inclusions; 42 syntax errors; 147 unresolved names (0.18%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-11-22 17:11:19.075
+!MESSAGE Indexed 'versuch_1_hello_world' (26 sources, 117 headers) in 3.02 sec: 11,422 declarations; 51,178 references; 2 unresolved inclusions; 42 syntax errors; 147 unresolved names (0.23%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-11-22 17:11:22.654
+!MESSAGE Indexed 'versuch_3_SPI' (28 sources, 120 headers) in 3.52 sec: 11,987 declarations; 56,261 references; 2 unresolved inclusions; 42 syntax errors; 149 unresolved names (0.22%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-11-22 17:11:26.092
+!MESSAGE Indexed 'versuch_2_rgb' (26 sources, 118 headers) in 3.38 sec: 12,597 declarations; 70,681 references; 2 unresolved inclusions; 42 syntax errors; 147 unresolved names (0.18%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-11-22 17:11:29.310
+!MESSAGE Indexed 'Versuch_3_IIC' (29 sources, 123 headers) in 3.16 sec: 12,512 declarations; 63,876 references; 2 unresolved inclusions; 42 syntax errors; 147 unresolved names (0.19%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-11-22 17:11:32.557
+!MESSAGE Indexed 'versuch_3_interfaces' (29 sources, 120 headers) in 3.19 sec: 11,989 declarations; 56,711 references; 2 unresolved inclusions; 42 syntax errors; 147 unresolved names (0.21%)
