@@ -1,0 +1,10 @@
+22:25:57 **** Incremental Build of configuration Debug for project versuch_2_timer ****
+make -j8 all 
+arm-none-eabi-size   versuch_2_timer.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18780	    100	   4028	  22908	   597c	versuch_2_timer.elf
+Finished building: default.size.stdout
+ 
+
+22:25:58 Build Finished. 0 errors, 0 warnings. (took 522ms)
+

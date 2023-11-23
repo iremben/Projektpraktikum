@@ -1,0 +1,27 @@
+22:25:58 **** Incremental Build of configuration Debug for project versuch_3_SPI ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/BMP280/bmp280.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/BMP280/bmp280.d" -MT"Core/Src/BMP280/bmp280.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/BMP280/bmp280.o"
+../Core/Src/BMP280/bmp280.c: In function 'read_register16':
+../Core/Src/BMP280/bmp280.c:69:36: error: 'spi_buf' undeclared (first use in this function)
+   69 |         HAL_SPI_Transmit(dev->spi, spi_buf, 1, 100);
+      |                                    ^~~~~~~
+../Core/Src/BMP280/bmp280.c:69:36: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/BMP280/bmp280.c:70:35: error: 'buf' undeclared (first use in this function)
+   70 |         HAL_SPI_Receive(dev->spi, buf, 1, 100);
+      |                                   ^~~
+../Core/Src/BMP280/bmp280.c:76:1: warning: no return statement in function returning non-void [-Wreturn-type]
+   76 | }
+      | ^
+../Core/Src/BMP280/bmp280.c: In function 'read_data':
+../Core/Src/BMP280/bmp280.c:84:1: warning: no return statement in function returning non-void [-Wreturn-type]
+   84 | }
+      | ^
+../Core/Src/BMP280/bmp280.c: In function 'write_register8':
+../Core/Src/BMP280/bmp280.c:91:1: warning: no return statement in function returning non-void [-Wreturn-type]
+   91 | }
+      | ^
+make: *** [Core/Src/BMP280/subdir.mk:19: Core/Src/BMP280/bmp280.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+
+22:25:58 Build Failed. 3 errors, 3 warnings. (took 404ms)
+

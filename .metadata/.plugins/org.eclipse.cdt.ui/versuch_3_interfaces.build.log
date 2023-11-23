@@ -1,0 +1,10 @@
+22:25:59 **** Incremental Build of configuration Debug for project versuch_3_interfaces ****
+make -j8 all 
+arm-none-eabi-size   versuch_3_interfaces.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18020	    100	   3892	  22012	   55fc	versuch_3_interfaces.elf
+Finished building: default.size.stdout
+ 
+
+22:25:59 Build Finished. 0 errors, 0 warnings. (took 579ms)
+

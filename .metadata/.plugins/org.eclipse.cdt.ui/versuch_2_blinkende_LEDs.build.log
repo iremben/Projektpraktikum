@@ -1,0 +1,10 @@
+18:02:41 **** Incremental Build of configuration Debug for project versuch_2_blinkende_LEDs ****
+make -j8 all 
+arm-none-eabi-size   versuch_2_blinkende_LEDs.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8656	     20	   1644	  10320	   2850	versuch_2_blinkende_LEDs.elf
+Finished building: default.size.stdout
+ 
+
+18:02:41 Build Finished. 0 errors, 0 warnings. (took 249ms)
+

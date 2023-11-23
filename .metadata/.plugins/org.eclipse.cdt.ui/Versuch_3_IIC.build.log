@@ -1,0 +1,10 @@
+22:25:56 **** Incremental Build of configuration Debug for project Versuch_3_IIC ****
+make -j8 all 
+arm-none-eabi-size   Versuch_3_IIC.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16432	     20	   3588	  20040	   4e48	Versuch_3_IIC.elf
+Finished building: default.size.stdout
+ 
+
+22:25:56 Build Finished. 0 errors, 0 warnings. (took 306ms)
+
