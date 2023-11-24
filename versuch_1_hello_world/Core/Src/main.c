@@ -229,7 +229,7 @@ int main(void)
 
 
 	  //Aufgabe 2.5
-	  value = 10;
+	  value = 20;
 	  sprintf(msg, "Value: %3u\r\n", value);
 	  HAL_UART_Transmit(&huart3, msg, strlen(msg), HAL_MAX_DELAY);
 	  HAL_Delay(100);
