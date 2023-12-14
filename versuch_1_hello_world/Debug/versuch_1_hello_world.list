@@ -43,11 +43,11 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  19 .debug_line   0000cfab  00000000  00000000  000551a5  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 20 .debug_str    000d9c82  00000000  00000000  00062150  2**0
+ 20 .debug_str    000d9c4c  00000000  00000000  00062150  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_frame  00003434  00000000  00000000  0013bdd4  2**2
+ 21 .debug_frame  00003434  00000000  00000000  0013bd9c  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 22 .debug_line_str 00000093  00000000  00000000  0013f208  2**0
+ 22 .debug_line_str 0000005d  00000000  00000000  0013f1d0  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -553,9 +553,9 @@ int main(void)
 
 
 	  //Aufgabe 2.5
-	  value = 10;
+	  value = 20;
  8000658:	4b10      	ldr	r3, [pc, #64]	; (800069c <main+0x100>)
- 800065a:	220a      	movs	r2, #10
+ 800065a:	2214      	movs	r2, #20
  800065c:	701a      	strb	r2, [r3, #0]
 	  sprintf(msg, "Value: %3u\r\n", value);
  800065e:	4b0f      	ldr	r3, [pc, #60]	; (800069c <main+0x100>)

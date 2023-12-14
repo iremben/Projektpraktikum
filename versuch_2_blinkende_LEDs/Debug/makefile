@@ -60,8 +60,8 @@ all: main-build
 main-build: versuch_2_blinkende_LEDs.elf secondary-outputs
 
 # Tool invocations
-versuch_2_blinkende_LEDs.elf versuch_2_blinkende_LEDs.map: $(OBJS) $(USER_OBJS) C:\Users\iremg\OneDrive\uni\Projektpraktikum\Projektpraktikum\workspace_1.13.2\versuch_2_blinkende_LEDs\STM32F429ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "versuch_2_blinkende_LEDs.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\iremg\OneDrive\uni\Projektpraktikum\Projektpraktikum\workspace_1.13.2\versuch_2_blinkende_LEDs\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="versuch_2_blinkende_LEDs.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+versuch_2_blinkende_LEDs.elf versuch_2_blinkende_LEDs.map: $(OBJS) $(USER_OBJS) C:\Users\iremg\Desktop\a\versuch_2_blinkende_LEDs\STM32F429ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "versuch_2_blinkende_LEDs.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\iremg\Desktop\a\versuch_2_blinkende_LEDs\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="versuch_2_blinkende_LEDs.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
