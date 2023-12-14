@@ -1,0 +1,48 @@
+13:11:18 **** Incremental Build of configuration Debug for project Projekt ISEA Lichtstaerkenoptimiertes Solar Panel ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:246:21: warning: passing argument 1 of 'LCD_Begin' from incompatible pointer type [-Wincompatible-pointer-types]
+  246 |           LCD_Begin(&hi2c2);
+      |                     ^~~~~~
+      |                     |
+      |                     I2C_HandleTypeDef *
+In file included from ../Core/Src/main.c:22:
+../Core/Src/lcd.h:38:48: note: expected 'LCD_HandleTypeDef *' but argument is of type 'I2C_HandleTypeDef *'
+   38 | HAL_StatusTypeDef LCD_Begin(LCD_HandleTypeDef *dev);
+      |                             ~~~~~~~~~~~~~~~~~~~^~~
+../Core/Src/main.c:248:25: warning: passing argument 1 of 'LCD_SetCursor' from incompatible pointer type [-Wincompatible-pointer-types]
+  248 |           LCD_SetCursor(&hi2c2, 0, 0);
+      |                         ^~~~~~
+      |                         |
+      |                         I2C_HandleTypeDef *
+In file included from ../Core/Src/main.c:22:
+../Core/Src/lcd.h:43:52: note: expected 'LCD_HandleTypeDef *' but argument is of type 'I2C_HandleTypeDef *'
+   43 | HAL_StatusTypeDef LCD_SetCursor(LCD_HandleTypeDef *dev, uint8_t row, uint8_t col);
+      |                                 ~~~~~~~~~~~~~~~~~~~^~~
+../Core/Src/main.c:250:20: warning: passing argument 1 of 'LCD_Test' from incompatible pointer type [-Wincompatible-pointer-types]
+  250 |           LCD_Test(&hi2c2);
+      |                    ^~~~~~
+      |                    |
+      |                    I2C_HandleTypeDef *
+In file included from ../Core/Src/main.c:22:
+../Core/Src/lcd.h:69:47: note: expected 'LCD_HandleTypeDef *' but argument is of type 'I2C_HandleTypeDef *'
+   69 | HAL_StatusTypeDef LCD_Test(LCD_HandleTypeDef *dev);
+      |                            ~~~~~~~~~~~~~~~~~~~^~~
+../Core/Src/main.c:244:29: warning: unused variable 'LCD' [-Wunused-variable]
+  244 |           LCD_HandleTypeDef LCD = {LCD_DEFAULT_ADDR, &hi2c2, 1};
+      |                             ^~~
+arm-none-eabi-gcc -o "Projekt ISEA Lichtstaerkenoptimiertes Solar Panel.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\iremg\Desktop\a\Projekt ISEA Lichtstaerkenoptimiertes Solar Panel\Projekt ISEA Lichtstaerkenoptimiertes Solar Panel\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projekt ISEA Lichtstaerkenoptimiertes Solar Panel.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projekt ISEA Lichtstaerkenoptimiertes Solar Panel.elf
+ 
+arm-none-eabi-size   Projekt\ ISEA\ Lichtstaerkenoptimiertes\ Solar\ Panel.elf 
+arm-none-eabi-objdump -h -S  Projekt\ ISEA\ Lichtstaerkenoptimiertes\ Solar\ Panel.elf  > "Projekt ISEA Lichtstaerkenoptimiertes Solar Panel.list"
+   text	   data	    bss	    dec	    hex	filename
+  23872	     24	   4016	  27912	   6d08	Projekt ISEA Lichtstaerkenoptimiertes Solar Panel.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projekt ISEA Lichtstaerkenoptimiertes Solar Panel.list
+ 
+
+13:11:20 Build Finished. 0 errors, 4 warnings. (took 1s.550ms)
+
